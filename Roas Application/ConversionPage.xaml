@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Roas_Application.ConversionPage">
+    
+    <ContentPage.Content>
+        
+        <StackLayout
+            Margin="20, 35, 20, 20">
+            <Label
+            FontSize="Medium"
+            HorizontalOptions="Center">Conversion:</Label>
+            <Entry Placeholder="Number of visitors..."
+               x:Name="VisitorsEntry"/>
+            <Entry Placeholder="Conversion rate... (%)"
+               x:Name="ConversionRateEntry"/>
+            <Button Text="Calculate"
+                Clicked="OnCalculateButton_clicked"></Button>
+            <Button
+            Text="Clear"
+            Clicked="OnClearButton_clicked"></Button>
+            <Label
+            x:Name="res"
+            Text=""
+            HorizontalOptions="Center"
+            FontSize="Medium">
+            </Label>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

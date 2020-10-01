@@ -4,7 +4,12 @@
              x:Class="Roas_Application.MainPage">
 
     <StackLayout>
-
+        <Label
+            HorizontalOptions="Center"
+            FontSize="Large">MAINPAGE TEMP</Label>
+        <Button
+            Text="Calculate Conversion"
+            Clicked="OnConversionButton_Clicked"></Button>
     </StackLayout>
 
 </ContentPage>

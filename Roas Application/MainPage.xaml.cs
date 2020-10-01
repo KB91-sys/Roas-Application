@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace Roas_Application
@@ -13,6 +8,11 @@ namespace Roas_Application
         public MainPage()
         {
             InitializeComponent();
+        }
+
+        private async void OnConversionButton_Clicked(object sender, EventArgs e) 
+        {
+            await Navigation.PushAsync(new ConversionPage());
         }
     }
 }
