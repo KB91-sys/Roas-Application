@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Roas_Application.SalePage">
+    <ContentPage.Content>
+        <StackLayout Margin="20, 35, 20, 20">
+            <Label
+                HorizontalOptions="Center"
+                FontSize="Medium">Sales</Label>
+            <Entry
+                Placeholder="Average order value..."
+                x:Name="aov"/>
+            <Entry
+                Placeholder="Conversions..."
+                x:Name="conversions"/>
+            <Button
+                Text="Calculate"
+                Clicked="OnCalculateButton_Clicked"></Button>
+            <Label
+                x:Name="res"
+                FontSize="Medium"
+                HorizontalTextAlignment="Center"></Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
