@@ -9,7 +9,7 @@
             Margin="20, 35, 20, 20">
             <Label
             FontSize="Medium"
-            HorizontalOptions="Center">Conversion rate</Label>
+            HorizontalOptions="Center">Conversion:</Label>
             <Entry Placeholder="Number of visitors..."
                x:Name="VisitorsEntry"/>
             <Entry Placeholder="Conversion rate... (%)"
