@@ -16,13 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="ConversionPage.xaml.cs">
-      <DependentUpon>ConversionPage.xaml</DependentUpon>
-    </Compile>
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Update="ConversionPage.xaml">
+    <EmbeddedResource Update="SalePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
