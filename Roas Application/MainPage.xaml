@@ -16,6 +16,9 @@
         <Button
             Text="Calculate Marketing Returns On Investment"
             Clicked="OnMROIButton_Clicked"/>
+        <Button
+            Text="Calculate visitors"
+            Clicked="OnVisitorsButton_Clicked"/>
     </StackLayout>
 
 </ContentPage>
