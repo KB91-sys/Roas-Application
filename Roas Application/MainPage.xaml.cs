@@ -24,5 +24,10 @@ namespace Roas_Application
         {
             await Navigation.PushAsync(new MROIPage());
         }
+
+        private async void OnVisitorsButton_Clicked(object sender, EventArgs e) 
+        {
+            await Navigation.PushAsync(new VisitorsPage());
+        }
     }
 }

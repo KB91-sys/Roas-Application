@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Roas_Application.VisitorsPage">
+    <ContentPage.Content>
+        <StackLayout Margin="{StaticResource MarginResource}">
+            <Label
+                Style="{StaticResource DefaultLabelStyle}"
+                Text="Calculate visitors"/>
+            <Entry 
+                Placeholder="Enter budget..."
+                x:Name="budget"
+                Keyboard="Numeric"/>
+
+            <Entry
+                Placeholder="Enter CPC..."
+                x:Name="cpc"
+                Keyboard="Numeric"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
