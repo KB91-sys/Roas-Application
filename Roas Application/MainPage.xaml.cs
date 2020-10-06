@@ -14,5 +14,15 @@ namespace Roas_Application
         {
             await Navigation.PushAsync(new ConversionPage());
         }
+
+        private async void OnSalesButton_Clicked(object sender, EventArgs e) 
+        {
+            await Navigation.PushAsync(new SalePage());
+        }
+
+        private async void OnMROIButton_Clicked(object sender, EventArgs e) 
+        {
+            await Navigation.PushAsync(new MROIPage());
+        }
     }
 }

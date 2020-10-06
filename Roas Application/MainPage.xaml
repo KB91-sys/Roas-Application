@@ -9,7 +9,13 @@
             FontSize="Large">MAINPAGE TEMP</Label>
         <Button
             Text="Calculate Conversion"
-            Clicked="OnConversionButton_Clicked"></Button>
+            Clicked="OnConversionButton_Clicked"/>
+        <Button
+            Text="Calculate sales"
+            Clicked="OnSalesButton_Clicked"/>
+        <Button
+            Text="Calculate Marketing Returns On Investment"
+            Clicked="OnMROIButton_Clicked"/>
     </StackLayout>
 
 </ContentPage>

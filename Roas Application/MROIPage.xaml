@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Roas_Application.MROIPage">
+    <ContentPage.Content>
+        <StackLayout 
+            Margin="20, 35, 20, 20">
+            <Label
+                HorizontalOptions="Center"
+                Text="Marketing returns on investments"
+                FontSize="Medium"/>
+            <Entry
+                Placeholder="Enter budget..."
+                x:Name="BudgetEntry"/>
+            <Entry
+                Placeholder="Enter sales..."
+                x:Name="SalesEntry"/>
+            <Button
+                Text="Calculate MROI"
+                Clicked="OnCalculateMROI_Clicked"></Button>
+            <Label
+                HorizontalOptions="Center"
+                FontSize="Medium"
+                x:Name="res"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
