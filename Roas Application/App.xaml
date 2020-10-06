@@ -3,6 +3,18 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Roas_Application.App">
     <Application.Resources>
+        <Thickness 
+            x:Key="MarginResource"
+            Top="20"
+            Left="20"
+            Right="20"
+            Bottom="35" />
 
+        <Style TargetType="Label" x:Key="DefaultLabelStyle">
+            <Setter Property="HorizontalOptions" Value="Center"/>
+            <Setter Property="FontSize" Value="Medium"/>
+        </Style>
+            
+            
     </Application.Resources>
 </Application>

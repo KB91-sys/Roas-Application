@@ -5,11 +5,9 @@
     
     <ContentPage.Content>
         
-        <StackLayout
-            Margin="20, 35, 20, 20">
+        <StackLayout Margin="{StaticResource MarginResource}">
             <Label
-            FontSize="Medium"
-            HorizontalOptions="Center">Conversion rate</Label>
+                Style="{StaticResource DefaultLabelStyle}">Conversion rate</Label>
             <Entry Placeholder="Number of visitors..."
                x:Name="VisitorsEntry" Keyboard="Numeric"/>
             <Entry Placeholder="Conversion rate... (%)"
@@ -17,13 +15,12 @@
             <Button Text="Calculate"
                 Clicked="OnCalculateButton_clicked"></Button>
             <Button
-            Text="Clear"
-            Clicked="OnClearButton_clicked"></Button>
+                Text="Clear"
+                Clicked="OnClearButton_clicked"></Button>
             <Label
-            x:Name="res"
-            Text=""
-            HorizontalOptions="Center"
-            FontSize="Medium">
+                x:Name="res"
+                Text=""
+                Style="{StaticResource DefaultLabelStyle}">
             </Label>
         </StackLayout>
 
