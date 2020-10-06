@@ -11,9 +11,9 @@
             FontSize="Medium"
             HorizontalOptions="Center">Conversion rate</Label>
             <Entry Placeholder="Number of visitors..."
-               x:Name="VisitorsEntry"/>
+               x:Name="VisitorsEntry" Keyboard="Numeric"/>
             <Entry Placeholder="Conversion rate... (%)"
-               x:Name="ConversionRateEntry"/>
+               x:Name="ConversionRateEntry" Keyboard="Numeric"/>
             <Button Text="Calculate"
                 Clicked="OnCalculateButton_clicked"></Button>
             <Button

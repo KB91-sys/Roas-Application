@@ -12,7 +12,7 @@
                 x:Name="aov"/>
             <Entry
                 Placeholder="Conversions..."
-                x:Name="conversions"/>
+                x:Name="conversions" Keyboard="Numeric"/>
             <Button
                 Text="Calculate"
                 Clicked="OnCalculateButton_Clicked"></Button>
