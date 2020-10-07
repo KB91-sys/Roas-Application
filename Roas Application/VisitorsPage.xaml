@@ -11,11 +11,19 @@
                 Placeholder="Enter budget..."
                 x:Name="budget"
                 Keyboard="Numeric"/>
-
+                
             <Entry
                 Placeholder="Enter CPC..."
                 x:Name="cpc"
                 Keyboard="Numeric"/>
+
+            <Button
+                Text="Calculate visitors"
+                Clicked="OnCalculateVisitors_Clicked"/>
+
+            <Label
+                Style="{StaticResource DefaultLabelStyle}"
+                x:Name="res"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

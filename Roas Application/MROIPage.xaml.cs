@@ -14,6 +14,8 @@ namespace Roas_Application
 
         private void OnCalculateMROI_Clicked(object sender, EventArgs e) 
         {
+            res.Text = "";
+
             var budgetValue = double.Parse(BudgetEntry.Text);
             var salesValue = double.Parse(SalesEntry.Text);
 
