@@ -28,8 +28,7 @@ namespace Roas_Application
             else 
             {
                 DisplayAlert("Alarm", "Input is not valid", "OK");
-            }
-        
+            }        
         }
 
         private void OnClearButton_clicked(object sender, EventArgs e)

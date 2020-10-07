@@ -3,8 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Roas_Application.BudgetPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label  Text="Budget"></Label>
+        <StackLayout Margin="{StaticResource MarginResource}">
+            <Label  Text="Budget"
+                    Style="{StaticResource DefaultLabelStyle}"></Label>
             <Entry x:Name="budget" Placeholder="Budget" Keyboard="Numeric"></Entry>
             <Button Text="Next" Clicked="OnNextButton_Clicked"></Button>
         </StackLayout>
