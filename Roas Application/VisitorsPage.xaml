@@ -20,6 +20,9 @@
             <Button
                 Text="Calculate visitors"
                 Clicked="OnCalculateVisitors_Clicked"/>
+            <Button
+                Text="Clear"
+                Clicked="OnClearButton_clicked"></Button>
 
             <Label
                 Style="{StaticResource DefaultLabelStyle}"

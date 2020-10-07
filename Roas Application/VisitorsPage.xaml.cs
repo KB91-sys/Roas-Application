@@ -21,5 +21,12 @@ namespace Roas_Application
 
             res.Text = (budgetValue * cpcValue).ToString();
         }
+
+        private void OnClearButton_clicked(object sender, EventArgs e)
+        {
+            budget.Text = "";
+            cpc.Text = "";
+            res.Text = "";
+        }
     }
 }

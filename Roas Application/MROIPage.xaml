@@ -19,6 +19,9 @@
             <Button
                 Text="Calculate MROI"
                 Clicked="OnCalculateMROI_Clicked"></Button>
+            <Button
+                Text="Clear"
+                Clicked="OnClearButton_clicked"></Button>
             <Label
                 Style="{StaticResource DefaultLabelStyle}"
                 x:Name="res"/>

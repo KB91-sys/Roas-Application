@@ -18,6 +18,9 @@
             <Button
                 Text="Calculate"
                 Clicked="OnCalculateButton_Clicked"></Button>
+            <Button
+                Text="Clear"
+                Clicked="OnClearButton_clicked"></Button>
             <Label
                 x:Name="res"
                 Style="{StaticResource DefaultLabelStyle}"

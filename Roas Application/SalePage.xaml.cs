@@ -22,5 +22,12 @@ namespace Roas_Application
             res.Text = "Sales value: " + (aovValue * conversionValue).ToString();
         }
 
+        private void OnClearButton_clicked(object sender, EventArgs e)
+        {
+            aov.Text = "";
+            conversions.Text = "";
+            res.Text = "";
+        }
+
     }
 }

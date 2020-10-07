@@ -28,6 +28,7 @@ namespace Roas_Application
         {
             VisitorsEntry.Text = "";
             ConversionRateEntry.Text = "";
+            res.Text = "";
         }
     }
 }

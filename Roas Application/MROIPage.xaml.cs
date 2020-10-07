@@ -23,5 +23,12 @@ namespace Roas_Application
 
             res.Text = MROIValue + " %";
         }
+
+        private void OnClearButton_clicked(object sender, EventArgs e)
+        {
+            BudgetEntry.Text = "";
+            SalesEntry.Text = "";
+            res.Text = "";
+        }
     }
 }
