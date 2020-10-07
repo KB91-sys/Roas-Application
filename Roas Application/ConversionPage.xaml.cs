@@ -14,6 +14,8 @@ namespace Roas_Application
 
         private void OnCalculateButton_clicked(object sender, EventArgs e)
         {
+            res.Text = "";
+
             var visitors = double.Parse(VisitorsEntry.Text);
             var conversionsRate = double.Parse(ConversionRateEntry.Text);
 
@@ -26,6 +28,7 @@ namespace Roas_Application
         {
             VisitorsEntry.Text = "";
             ConversionRateEntry.Text = "";
+            res.Text = "";
         }
     }
 }
