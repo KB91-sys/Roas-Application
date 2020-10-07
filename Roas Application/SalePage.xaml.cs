@@ -14,12 +14,19 @@ namespace Roas_Application
 
         private void OnCalculateButton_Clicked(object sender, EventArgs e)
         {
-            res.Text = "";
+            if(!string.IsNullOrEmpty(aov.Text) || !string.IsNullOrEmpty(conversions.Text)) 
+            {
+                res.Text = "";
 
-            var aovValue = double.Parse(aov.Text);
-            var conversionValue = double.Parse(conversions.Text);
+                var aovValue = double.Parse(aov.Text);
+                var conversionValue = double.Parse(conversions.Text);
 
-            res.Text = "Sales value: " + (aovValue * conversionValue).ToString();
+                res.Text = "Sales value: " + (aovValue * conversionValue).ToString();
+            }
+            else 
+            {
+                DisplayAlert("Alarm", "Input is not valid", "OK");
+            }
         }
 
         private void OnClearButton_clicked(object sender, EventArgs e)

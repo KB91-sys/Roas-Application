@@ -14,14 +14,22 @@ namespace Roas_Application
 
         private void OnCalculateMROI_Clicked(object sender, EventArgs e) 
         {
-            res.Text = "";
+            if(!string.IsNullOrEmpty(BudgetEntry.Text) || !string.IsNullOrEmpty(SalesEntry.Text))
+            {
+                res.Text = "";
 
-            var budgetValue = double.Parse(BudgetEntry.Text);
-            var salesValue = double.Parse(SalesEntry.Text);
+                var budgetValue = double.Parse(BudgetEntry.Text);
+                var salesValue = double.Parse(SalesEntry.Text);
 
-            var MROIValue = Math.Round((((salesValue - budgetValue) / budgetValue)*100), 2).ToString();
+                var MROIValue = Math.Round((((salesValue - budgetValue) / budgetValue)*100), 2).ToString();
 
-            res.Text = MROIValue + " %";
+                res.Text = MROIValue + " %";
+            }
+            else 
+            {
+                DisplayAlert("Alarm", "Input is not valid", "OK");
+            }
+        
         }
 
         private void OnClearButton_clicked(object sender, EventArgs e)

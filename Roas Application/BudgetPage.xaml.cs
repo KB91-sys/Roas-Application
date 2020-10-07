@@ -6,25 +6,24 @@ using Xamarin.Forms.Xaml;
 namespace Roas_Application
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-public partial class BudgetPage : ContentPage
-{
-    public BudgetPage()
+    public partial class BudgetPage : ContentPage
     {
-        InitializeComponent();
-    }
-    private async void OnNextButton_Clicked(object sender, EventArgs e)
+        public BudgetPage()
+        {
+            InitializeComponent();
+        }
+        private async void OnNextButton_Clicked(object sender, EventArgs e)
         {
             //var budgetValue = double.Parse(budget.Text);
 
             if (string.IsNullOrEmpty(budget.Text)==false)
             {
-            await Navigation.PushAsync(new MainPage());
-
+                await Navigation.PushAsync(new MainPage());
             }
             else
             {
-                DisplayAlert("Alert", "Input is not valid", "OK");
+                await DisplayAlert("Alert", "Input is not valid", "OK");
             }
         }
-}
+    }
 }

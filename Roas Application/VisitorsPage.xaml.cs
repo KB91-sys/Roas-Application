@@ -14,12 +14,19 @@ namespace Roas_Application
 
         private void OnCalculateVisitors_Clicked(object sender, EventArgs e) 
         {
-            res.Text = "";
+            if(!string.IsNullOrEmpty(budget.Text) || !string.IsNullOrEmpty(cpc.Text)) 
+            {
+                res.Text = "";
 
-            var budgetValue = double.Parse(budget.Text);
-            var cpcValue = double.Parse(cpc.Text);
+                var budgetValue = double.Parse(budget.Text);
+                var cpcValue = double.Parse(cpc.Text);
 
-            res.Text = (budgetValue * cpcValue).ToString();
+                res.Text = (budgetValue * cpcValue).ToString();            
+            }
+            else 
+            {
+                DisplayAlert("Alarm", "Input is not valid", "OK");
+            }
         }
 
         private void OnClearButton_clicked(object sender, EventArgs e)
