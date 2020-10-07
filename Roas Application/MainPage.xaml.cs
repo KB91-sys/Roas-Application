@@ -9,6 +9,10 @@ namespace Roas_Application
         {
             InitializeComponent();
         }
+        private async void OnBudgetButton_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new BudgetPage());
+        }
 
         private async void OnConversionButton_Clicked(object sender, EventArgs e) 
         {
